@@ -1,0 +1,19 @@
+schema:
+  - graph/*.graphqls
+
+exec:
+  filename: graph/generated.go
+  package: graph
+
+model:
+  filename: internal/models/models_gen.go
+  package: models
+
+resolver:
+  layout: single-file
+  dir: graph
+  package: graph
+  filename: graph/schema.resolvers.go
+
+autobind:
+  - "github.com/ElioNeto/go-graphql-api-boilerplate/internal/models"

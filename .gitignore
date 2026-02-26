@@ -1,0 +1,31 @@
+# Binaries
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test artifacts
+*.test
+coverage.out
+coverage.html
+
+# Environment files
+.env
+.env.local
+
+# Dependency directories
+vendor/
+
+# GraphQL Generated
+# (Normally we commit these, but we can ignore if we want clean PRs. We will commit them here for completeness)
+# graph/generated.go
+# internal/models/models_gen.go
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
